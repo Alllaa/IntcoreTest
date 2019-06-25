@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+   android:padding="10dp"
+    android:background="@drawable/background2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_form"
+        android:textSize="32sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/tx_register"
+        android:textColor="#E4DBDB"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx_register"
+        android:hint="@string/enter_name"
+        android:layout_marginTop="100dp"
+        android:id="@+id/ed_name"
+        android:inputType="textPersonName"
+        android:textColor="#E4DBDB"
+
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_name"
+        android:hint="@string/enter_phone"
+        android:id="@+id/ed_phone"
+        android:inputType="phone"
+        android:textColor="#E4DBDB"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_phone"
+        android:hint="@string/enter_email"
+        android:id="@+id/ed_Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#E4DBDB"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_Email"
+        android:hint="@string/enter_password"
+        android:id="@+id/ed_Password"
+        android:inputType="textPassword"
+        android:textColor="#E4DBDB"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_Password"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sign_up"
+        android:background="#80000000"
+        android:textColor="#E4DBDB"
+        android:id="@+id/btn_login"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" password must contain capital and small letter and numbers"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_below="@id/btn_login"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+
+</RelativeLayout>
